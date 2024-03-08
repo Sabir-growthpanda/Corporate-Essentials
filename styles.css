@@ -1,0 +1,246 @@
+/* -----------------------navbar */
+.navbar {
+  background-color: rgba(8, 8, 8, 1);
+}
+.navbar .container-fluid {
+  height: 30px;
+}
+.navbar-brand img {
+  width: 50px;
+}
+
+.navbar-brand {
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  margin-right: 10px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgba(254, 204, 42, 1);
+  text-decoration: underline;
+}
+.logout-btn {
+  border: 2px solid rgba(254, 204, 42, 1);
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: rgba(254, 204, 42, 1);
+  text-decoration: none;
+}
+/* -------------------------------------------------------------------------------home */
+.home {
+  background-image: url("img/home.jpg"); /* Add your background image URL here */
+  background-size: cover;
+  padding: 80px 20px;
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  color: #fff; /* Text color for better contrast */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the alpha value for overlay darkness */
+}
+
+.container-fluid {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.view-all {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #777;
+  cursor: pointer;
+}
+
+.navbargallery {
+  padding: 15px 0;
+}
+
+.navbargallery ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbargallery ul li {
+  display: inline;
+}
+
+.navbargallery ul li a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navbargallery ul li a:hover {
+  text-decoration: underline;
+}
+.navbar-brand.logo img {
+  width: 75px; /* Adjust the maximum height of the logo */
+  height: 73px; /* Ensures the logo does not exceed its container's width */
+  vertical-align: middle; /* Aligns the logo vertically */
+}
+
+:root {
+  --gap: 15px;
+  --width: 240px;
+}
+
+body {
+  margin: var(--gap);
+}
+
+.container > a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  overflow: hidden;
+}
+
+.container > a::after {
+  content: "";
+  background: linear-gradient(transparent, black);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  transition-duration: 0.75s;
+}
+
+.container > a:hover::after {
+  transform: translateY(50%);
+}
+
+.container > a > * {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition-duration: 1s;
+}
+
+.container > a:hover > img {
+  transform: scale(1.05);
+}
+
+.container {
+  display: grid;
+  grid-gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(var(--width), 1fr));
+  grid-auto-rows: var(--height);
+  grid-auto-flow: dense;
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.menu-item {
+  margin-right: 15px;
+}
+
+.card-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card i {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+#custom-container {
+  background-image: url("your-background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px; /* Adjust padding as needed */
+}
+#custom {
+  background-image: url("home.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px; /* Adjust padding as needed */
+  color: rgb(180, 22, 22); /* Text color for better contrast */
+}
+
+.content {
+  padding: 20px;
+  color: #000000;
+}
+
+/* Adjust search bar and button */
+.form-control {
+  width: 60%;
+  margin-right: 10px;
+}
+
+/* My Styles Here */
+.carousel-indicators .active {
+  background-color: #007bff;
+}
+
+.carousel-indicators li {
+  background-color: #ccc;
+}
+
+.carousel-indicators {
+  bottom: -21px !important;
+}
