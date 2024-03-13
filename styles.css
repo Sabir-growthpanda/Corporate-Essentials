@@ -244,3 +244,11 @@ body {
 .carousel-indicators {
   bottom: -21px !important;
 }
+
+.carousel-container {
+  display: none;
+}
+
+.active-carousel {
+  display: block;
+}
